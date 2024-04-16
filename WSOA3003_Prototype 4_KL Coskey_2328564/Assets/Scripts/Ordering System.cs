@@ -4,26 +4,23 @@ using UnityEngine;
 
 public class OrderingSystem : MonoBehaviour
 {
-    List<int> order = new List<int>();
+    public List<int> order = new List<int>();
     public int timeWaiting;
     void Start()
     {
         StartCoroutine(waitingTime());
-        int fryTYPE = Random.Range(0, 4); //straight, curly, slap chips, crinkle cut, mashed
+        int fryTYPE = Random.Range(0, 3); // shoestring, waffle, curly, crinkle 
         order.Add(fryTYPE);
-        int oneSPICE = Random.Range(0, 3); //salt, pepper, paprika, cumin
+        int oneSPICE = Random.Range(0, 3); //nothing, salt, pepper, paprika
         order.Add(oneSPICE);
-        int twoSPICE = Random.Range(0, 3); //chilli salt, fennel seeds , garlic, BBQ
+        int twoSPICE = Random.Range(0, 3); //nothing, chilli , garlic, BBQ
         order.Add(twoSPICE);
-        int dippingSAUCE = Random.Range(0, 4);// tomato sauce, mustard, cheese, mayo, 1000 islands
+        int dippingSAUCE = Random.Range(0, 4);//nothing, tomato , mustard, cheese, mayo
         order.Add(dippingSAUCE);
         int packaging = Random.Range(0, 2);// plate, fry box, bowl
         order.Add(packaging);
         Debug.Log(name);
-        foreach (int i in order)
-        {
-            Debug.Log(i);
-        }
+        
 
     }
 
