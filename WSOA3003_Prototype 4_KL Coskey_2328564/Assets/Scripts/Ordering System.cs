@@ -6,6 +6,7 @@ public class OrderingSystem : MonoBehaviour
 {
     public List<int> order = new List<int>();
     public int timeWaiting;
+    public GameObject orderSheet;
     void Start()
     {
         StartCoroutine(waitingTime());
@@ -20,15 +21,10 @@ public class OrderingSystem : MonoBehaviour
         int packaging = Random.Range(0, 2);// plate, fry box, bowl
         order.Add(packaging);
         Debug.Log(name);
-        
+        orderSheet = GameObject.Find("OrderSheet");
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     private IEnumerator waitingTime()
     {
@@ -50,4 +46,8 @@ public class OrderingSystem : MonoBehaviour
             StartCoroutine(waitingTime());
     }
 
+    public void makeTheOrder()
+    {
+
+    }
 }
