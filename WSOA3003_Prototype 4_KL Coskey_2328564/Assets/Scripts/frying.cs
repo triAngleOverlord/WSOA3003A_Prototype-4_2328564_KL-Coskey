@@ -6,14 +6,11 @@ using UnityEngine.UI;
 public class frying : MonoBehaviour
 {
     public GameObject frySlot;
-    [SerializeField] private GameObject fryState;
+    [SerializeField] public GameObject fryState;
     public int time;
     public bool isFrying;
 
-    public void Start()
-    {
-        frySlot = gameObject;
-    }
+    
     public void fryingFries()
     {
         if (frySlot == null)

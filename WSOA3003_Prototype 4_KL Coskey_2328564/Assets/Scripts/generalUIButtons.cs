@@ -24,7 +24,7 @@ public class generalUIButtons : MonoBehaviour
     public void movePanelInFront()
     {
         assignedPanel.transform.SetAsLastSibling();
-        Debug.Log("Moved");
+        //Debug.Log("Moved");
     }
 
     public void submitFood()
