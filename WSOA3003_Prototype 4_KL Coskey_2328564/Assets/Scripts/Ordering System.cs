@@ -141,4 +141,9 @@ public class OrderingSystem : MonoBehaviour
         }
         return orderName;
     }
+
+    public void judging()
+    {
+
+    }
 }

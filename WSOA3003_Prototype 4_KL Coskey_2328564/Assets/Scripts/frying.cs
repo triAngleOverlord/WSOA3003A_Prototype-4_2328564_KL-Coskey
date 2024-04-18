@@ -35,21 +35,21 @@ public class frying : MonoBehaviour
         if (time < 30)
         {
             fryState.GetComponent<RawImage>().color = Color.blue;
-            frySlot.GetComponent<dragFries>().potatoState = frySlot.GetComponent<dragFries>().potatoType;
+            frySlot.GetComponent<dragFries>().INT = frySlot.GetComponent<dragFries>().potatoType;
         }
         if (time == 30)
         {
             Debug.Log("Fries are perfectly cooked");
             StartCoroutine(timer());
             fryState.GetComponent<RawImage>().color = Color.green;
-            frySlot.GetComponent<dragFries>().potatoState +=1;
+            frySlot.GetComponent<dragFries>().INT +=1;
         }
         else if (time == 60)
         {
             Debug.Log("Fries are now burnt");
             StartCoroutine(timer());
             fryState.GetComponent<RawImage>().color = Color.red;
-            frySlot.GetComponent<dragFries>().potatoState +=1;
+            frySlot.GetComponent<dragFries>().INT +=1;
         }
         else
             StartCoroutine(timer());

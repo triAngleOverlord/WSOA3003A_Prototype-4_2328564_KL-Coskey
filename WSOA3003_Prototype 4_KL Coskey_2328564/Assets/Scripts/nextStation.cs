@@ -12,7 +12,7 @@ public class nextStation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.SetAsLastSibling();
     }
 
     public void toSpice()
@@ -23,14 +23,19 @@ public class nextStation : MonoBehaviour
             transform.parent.transform.SetParent(GameObject.Find("SpicePanel").transform, true);
             transform.parent.GetChild(0).GetComponent<CanvasGroup>().blocksRaycasts = false;
         }
-        else if (transform.parent.parent.name == "Spice Panel")
+        else if (transform.parent.parent.name == "SpicePanel")
         {
-
+            transform.parent.transform.SetParent(GameObject.Find("SaucePanel").transform, true);
         }
-        else if (transform.parent.parent.name == "Sauce Panel")
+        else if (transform.parent.parent.name == "SaucePanel")
         {
-
+            transform.parent.transform.SetParent(GameObject.Find("OrderPanel").transform, true);
+            transform.parent.parent.SetAsLastSibling();
+            GameObject.FindGameObjectWithTag("NPC").GetComponent<OrderingSystem>().judging();
+            gameObject.SetActive(false);
         }
+        Debug.Log("click");
+        
         
     }
 }

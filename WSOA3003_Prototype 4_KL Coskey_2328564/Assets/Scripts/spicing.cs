@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class spicing : MonoBehaviour
 {
     public spice spiceType;
-    public int spiceINT;
+    public int INT;
     public GameObject spicePrefab;
     private GameObject clone;
     private Color color;
@@ -26,28 +26,28 @@ public class spicing : MonoBehaviour
             switch (spiceType)
             {
                 case spice.salt:
-                    spiceINT = 1; color = Color.white;
+                    INT = 1; color = Color.white;
                     break;
                 case spice.pepper:
-                    spiceINT = 2; color = Color.black;
+                    INT = 2; color = Color.black;
                     break;
                 case spice.paprika:
-                    spiceINT = 3; color = Color.blue;
+                    INT = 3; color = Color.blue;
                     break;
                 case spice.chilli:
-                    spiceINT = 4; color = Color.red;
+                    INT = 4; color = Color.red;
                     break;
                 case spice.garlic:
-                    spiceINT = 5; color = Color.green;
+                    INT = 5; color = Color.green;
                     break;
                 case spice.BBQ:
-                    spiceINT = 6; color = Color.yellow;
+                    INT = 6; color = Color.yellow;
                     break;
             }
 
             clone = Instantiate(spicePrefab, GameObject.FindGameObjectWithTag("Pack").transform);
             clone.GetComponent<RectTransform>().localPosition = Vector3.zero;
-            clone.GetComponent<spicing>().spiceINT = spiceINT;
+            clone.GetComponent<spicing>().INT = INT;
             clone.GetComponent<RawImage>().color = color;
 
         }

@@ -9,7 +9,7 @@ public class packaging : MonoBehaviour, IDropHandler
     public GameObject submitToNext;
     public GameObject packClone;
     public packType type;
-    public int packagingINT;
+    public int INT;
     public enum packType
     {
         plate, fryBox, bowl
@@ -18,11 +18,11 @@ public class packaging : MonoBehaviour, IDropHandler
     {
         switch (type)
         {
-            case packType.plate: packagingINT =0; 
+            case packType.plate: INT =0; 
                 break;
-            case packType.fryBox: packagingINT = 1;
+            case packType.fryBox: INT = 1;
                 break;
-            case packType.bowl: packagingINT = 2;
+            case packType.bowl: INT = 2;
                 break;
         }
     }

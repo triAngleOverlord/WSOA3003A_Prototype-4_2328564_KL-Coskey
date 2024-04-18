@@ -15,7 +15,7 @@ public class dragFries : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
     [SerializeField] private GameObject fryClone;
     public fryType type;
     public int potatoType;
-    public int potatoState;
+    public int INT;
 
     private Image potato;
 
@@ -105,9 +105,9 @@ public class dragFries : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
 
     public void Update()
     {
-        if (potatoState == potatoType + 1)
+        if (INT == potatoType + 1)
             potato.color = Color.white;
-        else if(potatoState == potatoType + 2)
+        else if(INT == potatoType + 2)
             potato.color = Color.red;
         else
             potato.color = Color.blue;

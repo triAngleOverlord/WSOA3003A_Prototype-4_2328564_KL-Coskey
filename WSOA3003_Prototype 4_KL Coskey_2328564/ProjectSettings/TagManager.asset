@@ -8,6 +8,7 @@ TagManager:
   - potato
   - Pack
   - spice
+  - NPC
   layers:
   - Default
   - TransparentFX
