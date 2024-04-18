@@ -16,7 +16,7 @@ public class spicing : MonoBehaviour
     }
     public void creatSpice()
     {
-        if (GameObject.FindGameObjectWithTag("Pack").transform.parent != transform.parent || GameObject.FindGameObjectWithTag("Pack") == null)
+        if (GameObject.FindGameObjectWithTag("packaging").transform.parent.name != "SpicePanel"|| GameObject.FindGameObjectWithTag("Pack") == null)
         {
             Debug.Log("Couldn't fine");
             return;
@@ -45,7 +45,7 @@ public class spicing : MonoBehaviour
                     break;
             }
 
-            clone = Instantiate(spicePrefab, GameObject.FindGameObjectWithTag("Pack").transform);
+            clone = Instantiate(spicePrefab, GameObject.FindGameObjectWithTag("packaging").transform);
             clone.GetComponent<RectTransform>().localPosition = Vector3.zero;
             clone.GetComponent<spicing>().INT = INT;
             clone.GetComponent<RawImage>().color = color;

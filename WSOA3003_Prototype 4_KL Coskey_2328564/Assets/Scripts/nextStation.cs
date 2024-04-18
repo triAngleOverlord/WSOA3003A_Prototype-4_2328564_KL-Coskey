@@ -22,6 +22,7 @@ public class nextStation : MonoBehaviour
             transform.parent.GetComponent<packaging>().cloning();
             transform.parent.transform.SetParent(GameObject.Find("SpicePanel").transform, true);
             transform.parent.GetChild(0).GetComponent<CanvasGroup>().blocksRaycasts = false;
+            transform.parent.tag = "packaging";
         }
         else if (transform.parent.parent.name == "SpicePanel")
         {

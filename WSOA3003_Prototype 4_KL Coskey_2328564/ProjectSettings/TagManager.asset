@@ -9,6 +9,7 @@ TagManager:
   - Pack
   - spice
   - NPC
+  - packaging
   layers:
   - Default
   - TransparentFX

@@ -16,7 +16,7 @@ public class saucing : MonoBehaviour
     }
     public void creatSauce()
     {
-        if (GameObject.FindGameObjectWithTag("Pack").transform.parent != transform.parent || GameObject.FindGameObjectWithTag("Pack") == null)
+        if (GameObject.FindGameObjectWithTag("packaging").transform.parent.name != "SaucePanel" || GameObject.FindGameObjectWithTag("Pack") == null)
         {
             Debug.Log("Couldn't fine");
             return;
@@ -39,7 +39,7 @@ public class saucing : MonoBehaviour
                     break;
             }
 
-            clone = Instantiate(saucePrefab, GameObject.FindGameObjectWithTag("Pack").transform);
+            clone = Instantiate(saucePrefab, GameObject.FindGameObjectWithTag("packaging").transform);
             clone.GetComponent<RectTransform>().localPosition = Vector3.zero;
             clone.GetComponent<saucing>().INT = INT;
             clone.GetComponent<RawImage>().color = color;
