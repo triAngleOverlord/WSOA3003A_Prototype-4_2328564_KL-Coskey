@@ -56,13 +56,13 @@ public class dragFries : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
         {
             //Debug.Log(transform.parent.name + " is the new parent");
             itemCanvasGp.blocksRaycasts = true;
-            if (transform.parent.tag != "Untagged" && originalSlot.tag != "Pack")
+            if (originalSlot.tag == "Untagged")
             {
                 var clone = Instantiate(fryClone, Vector3.zero, Quaternion.identity, originalSlot.transform);
                 clone.transform.GetComponent<RectTransform>().localPosition = Vector3.zero;
             }
 
-            if (transform.parent.tag == "Pack" && originalSlot.tag != "Untagged")
+            if (originalSlot.tag == "fry")
             {
                 originalSlot.GetComponent<frying>().frySlot = null;
                 originalSlot.GetComponent<frying>().fryState.GetComponent<RawImage>().color = Color.blue;
