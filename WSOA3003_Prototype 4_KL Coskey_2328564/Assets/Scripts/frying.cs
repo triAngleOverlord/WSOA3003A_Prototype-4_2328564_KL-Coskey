@@ -8,7 +8,7 @@ public class frying : MonoBehaviour
     public GameObject frySlot;
     [SerializeField] public GameObject fryState;
     public int time;
-    public bool isFrying;
+    private bool isFrying;
 
     
     public void fryingFries()
@@ -35,18 +35,21 @@ public class frying : MonoBehaviour
         if (time < 30)
         {
             fryState.GetComponent<RawImage>().color = Color.blue;
+            frySlot.GetComponent<dragFries>().potatoState = frySlot.GetComponent<dragFries>().potatoType;
         }
         if (time == 30)
         {
             Debug.Log("Fries are perfectly cooked");
             StartCoroutine(timer());
             fryState.GetComponent<RawImage>().color = Color.green;
+            frySlot.GetComponent<dragFries>().potatoState +=1;
         }
         else if (time == 60)
         {
             Debug.Log("Fries are now burnt");
             StartCoroutine(timer());
             fryState.GetComponent<RawImage>().color = Color.red;
+            frySlot.GetComponent<dragFries>().potatoState +=1;
         }
         else
             StartCoroutine(timer());

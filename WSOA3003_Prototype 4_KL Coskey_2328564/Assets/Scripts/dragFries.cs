@@ -1,10 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class dragFries : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
@@ -17,12 +13,24 @@ public class dragFries : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
     public CanvasGroup itemCanvasGp;
 
     [SerializeField] private GameObject fryClone;
+    public fryType type;
+    public int potatoType;
+    public int potatoState;
 
+    private Image potato;
+
+    public enum fryType
+    {
+        shoestring, waffle, curly, crinkle
+    }
     public void Awake()
     {
         itemRect = GetComponent<RectTransform>();
         itemCanvasGp = GetComponent<CanvasGroup>();
         canvas = GameObject.Find("PlayerCanvas").GetComponent<Canvas>();
+        potato = GetComponent<Image>();
+
+        typeOfFry();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -77,5 +85,32 @@ public class dragFries : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDra
 
         }
 
+    }
+
+    public int typeOfFry()
+    {
+        switch (type)
+        {
+            case fryType.shoestring:potatoType = 0; 
+                break;
+            case fryType.waffle: potatoType = 3;
+                break;
+            case fryType.curly:potatoType = 6;
+                break;
+            case fryType.crinkle:potatoType= 9; 
+                break;
+        }
+        return potatoType;
+    }
+
+    public void Update()
+    {
+        if (potatoState == potatoType + 1)
+            potato.color = Color.white;
+        else if(potatoState == potatoType + 2)
+            potato.color = Color.red;
+        else
+            potato.color = Color.blue;
+        
     }
 }

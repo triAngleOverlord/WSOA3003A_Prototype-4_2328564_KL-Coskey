@@ -8,6 +8,24 @@ public class packaging : MonoBehaviour, IDropHandler
     public bool hasFries;
     public GameObject submitToNext;
     public GameObject packClone;
+    public packType type;
+    public int packagingINT;
+    public enum packType
+    {
+        plate, fryBox, bowl
+    }
+    public void Awake()
+    {
+        switch (type)
+        {
+            case packType.plate: packagingINT =0; 
+                break;
+            case packType.fryBox: packagingINT = 1;
+                break;
+            case packType.bowl: packagingINT = 2;
+                break;
+        }
+    }
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag != null)

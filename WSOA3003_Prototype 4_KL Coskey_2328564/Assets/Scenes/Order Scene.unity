@@ -684,7 +684,6 @@ MonoBehaviour:
   frySlot: {fileID: 0}
   fryState: {fileID: 388092160}
   time: 0
-  isFrying: 0
 --- !u!1 &258261626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,7 +1443,6 @@ MonoBehaviour:
   frySlot: {fileID: 0}
   fryState: {fileID: 1298601860}
   time: 0
-  isFrying: 0
 --- !u!114 &443146339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1789,7 +1787,6 @@ GameObject:
   - component: {fileID: 648094220}
   - component: {fileID: 648094219}
   - component: {fileID: 648094218}
-  - component: {fileID: 648094217}
   m_Layer: 5
   m_Name: parent4
   m_TagString: Untagged
@@ -1817,24 +1814,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2.569801, y: -0.059999704}
   m_SizeDelta: {x: 1.6473, y: 2.573}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &648094217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648094215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77434d4be33b3d34bb1fc6e7f7584f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  originalSlot: {fileID: 0}
-  newSlot: {fileID: 0}
-  itemRect: {fileID: 0}
-  itemCanvasGp: {fileID: 0}
-  fryClone: {fileID: 0}
 --- !u!225 &648094218
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2097,11 +2076,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694919059}
   m_CullTransparentMesh: 1
---- !u!1 &730588805 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7164538667782596898, guid: ad6750d53655cce429ea0ea9757c095e, type: 3}
-  m_PrefabInstance: {fileID: 59932938520687546}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &730588806 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2859122661076746373, guid: ad6750d53655cce429ea0ea9757c095e, type: 3}
@@ -2268,7 +2242,6 @@ MonoBehaviour:
   frySlot: {fileID: 0}
   fryState: {fileID: 980103503}
   time: 0
-  isFrying: 0
 --- !u!1 &798980808
 GameObject:
   m_ObjectHideFlags: 0
@@ -3834,11 +3807,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423406543}
   m_CullTransparentMesh: 1
---- !u!1 &1520728527 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 868966615388480835, guid: f95aa13f70039a44b9ab0bdc1a84bf49, type: 3}
-  m_PrefabInstance: {fileID: 3913034322706893046}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1520728528 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 462753106452952060, guid: f95aa13f70039a44b9ab0bdc1a84bf49, type: 3}
@@ -4098,11 +4066,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637334697}
   m_CullTransparentMesh: 1
---- !u!1 &1638419431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2592007676401631642, guid: 4534f0ad728425447b95969632043a80, type: 3}
-  m_PrefabInstance: {fileID: 8532334624522783140}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1638419432 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1644189594088051118, guid: 4534f0ad728425447b95969632043a80, type: 3}
@@ -5003,11 +4966,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930951441}
   m_CullTransparentMesh: 1
---- !u!1 &1938182479 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7898575808537033846, guid: 41aa3609e77945c4a93fd0c659673d27, type: 3}
-  m_PrefabInstance: {fileID: 1039968997239692076}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1938182480 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 608197853338965984, guid: 41aa3609e77945c4a93fd0c659673d27, type: 3}
@@ -5238,7 +5196,6 @@ GameObject:
   - component: {fileID: 1975357821}
   - component: {fileID: 1975357820}
   - component: {fileID: 1975357819}
-  - component: {fileID: 1975357818}
   m_Layer: 5
   m_Name: parent1
   m_TagString: Untagged
@@ -5266,24 +5223,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1.62, y: 1.45}
   m_SizeDelta: {x: 1.6473, y: 2.573}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1975357818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1975357816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77434d4be33b3d34bb1fc6e7f7584f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  originalSlot: {fileID: 0}
-  newSlot: {fileID: 0}
-  itemRect: {fileID: 0}
-  itemCanvasGp: {fileID: 0}
-  fryClone: {fileID: 0}
 --- !u!225 &1975357819
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5346,7 +5285,6 @@ GameObject:
   - component: {fileID: 1980804682}
   - component: {fileID: 1980804681}
   - component: {fileID: 1980804680}
-  - component: {fileID: 1980804679}
   m_Layer: 5
   m_Name: parent3
   m_TagString: Untagged
@@ -5374,24 +5312,6 @@ RectTransform:
   m_AnchoredPosition: {x: 5.068801, y: 0.11000037}
   m_SizeDelta: {x: 1.6473, y: 2.573}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1980804679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980804677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77434d4be33b3d34bb1fc6e7f7584f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  originalSlot: {fileID: 0}
-  newSlot: {fileID: 0}
-  itemRect: {fileID: 0}
-  itemCanvasGp: {fileID: 0}
-  fryClone: {fileID: 0}
 --- !u!225 &1980804680
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5967,7 +5887,6 @@ GameObject:
   - component: {fileID: 2129943393}
   - component: {fileID: 2129943392}
   - component: {fileID: 2129943391}
-  - component: {fileID: 2129943390}
   m_Layer: 5
   m_Name: parent2
   m_TagString: Untagged
@@ -5995,24 +5914,6 @@ RectTransform:
   m_AnchoredPosition: {x: 3.898801, y: 1.6435003}
   m_SizeDelta: {x: 1.6473, y: 2.573}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2129943390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129943388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77434d4be33b3d34bb1fc6e7f7584f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  originalSlot: {fileID: 0}
-  newSlot: {fileID: 0}
-  itemRect: {fileID: 0}
-  itemCanvasGp: {fileID: 0}
-  fryClone: {fileID: 0}
 --- !u!225 &2129943391
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6151,10 +6052,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5144190069231784454, guid: ad6750d53655cce429ea0ea9757c095e, type: 3}
-      propertyPath: fryClone
-      value: 
-      objectReference: {fileID: 730588805}
     - target: {fileID: 7164538667782596898, guid: ad6750d53655cce429ea0ea9757c095e, type: 3}
       propertyPath: m_Name
       value: Potato (3)
@@ -6253,9 +6150,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6310207767422362983, guid: 41aa3609e77945c4a93fd0c659673d27, type: 3}
-      propertyPath: fryClone
-      value: 
-      objectReference: {fileID: 1938182479}
+      propertyPath: type
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7898575808537033846, guid: 41aa3609e77945c4a93fd0c659673d27, type: 3}
       propertyPath: m_Name
       value: Potato (2)
@@ -6459,6 +6356,10 @@ PrefabInstance:
       value: bowl
       objectReference: {fileID: 0}
     - target: {fileID: 6976751123882824134, guid: 85e2f60f3fe501741a508daa42278fe6, type: 3}
+      propertyPath: type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976751123882824134, guid: 85e2f60f3fe501741a508daa42278fe6, type: 3}
       propertyPath: packClone
       value: 
       objectReference: {fileID: 1070562589959480775, guid: 85e2f60f3fe501741a508daa42278fe6, type: 3}
@@ -6560,9 +6461,9 @@ PrefabInstance:
       value: Potato (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4475550313628551499, guid: f95aa13f70039a44b9ab0bdc1a84bf49, type: 3}
-      propertyPath: fryClone
-      value: 
-      objectReference: {fileID: 1520728527}
+      propertyPath: type
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6659,6 +6560,10 @@ PrefabInstance:
     - target: {fileID: 7227666677207700634, guid: 0b411c90482a9fd41b9feb0caca023c3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390945171691880884, guid: 0b411c90482a9fd41b9feb0caca023c3, type: 3}
+      propertyPath: type
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7390945171691880884, guid: 0b411c90482a9fd41b9feb0caca023c3, type: 3}
       propertyPath: packClone
@@ -6762,9 +6667,9 @@ PrefabInstance:
       value: Potato
       objectReference: {fileID: 0}
     - target: {fileID: 7971466619643661657, guid: 4534f0ad728425447b95969632043a80, type: 3}
-      propertyPath: fryClone
-      value: 
-      objectReference: {fileID: 1638419431}
+      propertyPath: type
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
